@@ -2,6 +2,9 @@ import React, { Component } from "react"
 
 import fantasy from "../data/fantasy.json"
 import history from "../data/history.json"
+import horror from "../data/horror.json"
+import romance from "../data/romance.json"
+import scifi from "../data/scifi.json"
 
 import {Container, Row, Col, Card, Button, Dropdown} from "react-bootstrap"
 
@@ -25,12 +28,15 @@ class LatesRelease extends Component{
   <Dropdown.Menu>
     <Dropdown.Item onClick={()=> this.setState({listLibri: fantasy})}>Fantasy</Dropdown.Item>
     <Dropdown.Item onClick={()=> this.setState({listLibri: history})}>History</Dropdown.Item>
+    <Dropdown.Item onClick={()=> this.setState({listLibri: horror})}>horror</Dropdown.Item>
+    <Dropdown.Item onClick={()=> this.setState({listLibri: romance})}>romance</Dropdown.Item>
+    <Dropdown.Item onClick={()=> this.setState({listLibri: scifi})}>scifi</Dropdown.Item>
   </Dropdown.Menu>
 </Dropdown>
 
         <Row>
           {this.state.listLibri.map(book=>
-        <Col xs={4} className="my-5">
+        <Col xs={4} className="my-5" >
         <Card style={{ width: '18rem' }}>
   <Card.Img variant="top" src={book.img} />
   <Card.Body>
