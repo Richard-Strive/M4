@@ -6,9 +6,11 @@ import history from "../data/history.json"
 import {Container, Row, Col, Card, Button, Dropdown} from "react-bootstrap"
 
 class LatesRelease extends Component{
+  
   state={
     listLibri: history,
   }
+
   render(){
     
     console.log(this.state)
