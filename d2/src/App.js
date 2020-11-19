@@ -8,6 +8,7 @@ import MyFooter from "./components/MyFooter";
 import MyJumbotron from "./components/MyJumbotron";
 import LatesRelease from "./components/LatesRelease";
 
+
 // import FooTer from "./components/FooTer";
 
 class App extends React.Component {
